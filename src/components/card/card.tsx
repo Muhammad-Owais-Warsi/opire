@@ -1,10 +1,10 @@
 import { Card, Group, Divider, Text, ActionIcon, Badge } from '@mantine/core';
-import { BrandGithub, BrandTwitter } from 'tabler-icons-react'; 
+import { BrandGithub, BrandTwitter } from 'tabler-icons-react';
 import OpireUser from '../User/user';
 import OpireStats from '../stats/stat';
 import OpireSkill from '../skills/skill';
 import avatar from "../../../public/avatar.png";
-import opire_logo from "../../../public/opire_logo.svg"; 
+import opire_logo from "../../../public/opire_logo.svg";
 
 const user = {
     name: 'Jane Doe',
@@ -14,7 +14,7 @@ const user = {
     moneyEarned: 3500,
     challengesWon: 15,
     badges: ['React', 'Tailwind', 'Docker'],
-    contributorStatus: 'Top Contributor', 
+    contributorStatus: 'Top Contributor',
 };
 
 export default function OpireCard() {
@@ -46,7 +46,7 @@ export default function OpireCard() {
                 border: '1px solid rgba(255, 255, 255, 0.2)',
                 boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
                 maxWidth: 320,
-                minHeight: 350, 
+                minHeight: 350,
                 margin: '0 auto',
                 transition: 'transform 0.2s ease-out, box-shadow 0.2s ease-out, background 0.3s ease-in-out',
                 transformStyle: 'preserve-3d',
@@ -67,20 +67,24 @@ export default function OpireCard() {
                 <OpireUser avatar={user.avatar} name={user.name} title={user.title} />
                 <Group style={{ position: 'relative', left: '20px' }}>
                     <ActionIcon variant="transparent">
-                        <BrandGithub size={16} color="white" />
+                        <a href='https://github.com/Muhammad-Owais-Warsi'>
+                            <BrandGithub size={16} color="white" />
+                        </a>
                     </ActionIcon>
                     <ActionIcon variant="transparent">
-                        <BrandTwitter size={16} color="white" />
+                        <a href='https://x.com/MO_warsi786'>
+                            <BrandTwitter size={16} color="white" />
+                        </a>
                     </ActionIcon>
                 </Group>
             </Group>
 
-   
-           <Badge 
-                color="teal" 
+
+            <Badge
+                color="teal"
                 style={{
-                    marginTop: -10, 
-                    fontSize: '14px', 
+                    marginTop: -10,
+                    fontSize: '14px',
                     backgroundColor: '#00bfae',  // Neon teal background
                     color: '#000',                // Dark text color for contrast
                     boxShadow: '0 0 10px 2px #00bfae',  // Neon glow effect
@@ -112,12 +116,12 @@ export default function OpireCard() {
                 style={{
                     position: 'absolute',
                     bottom: '20px', // Adjusted position for better alignment
-                    right: '10px', 
-                    opacity: 0.5, 
-                    fontWeight: 200, 
-                    fontSize: '12px', 
+                    right: '10px',
+                    opacity: 0.5,
+                    fontWeight: 200,
+                    fontSize: '12px',
                     display: 'flex',
-                    alignItems: 'center', 
+                    alignItems: 'center',
                 }}
                 color="white"
             >
